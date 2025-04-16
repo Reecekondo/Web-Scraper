@@ -58,8 +58,11 @@ Things will go wrong. That’s life. Fortunately, all errors get logged in scrap
 Common failures & solutions:
 
 | Error Type | Cause | Solution | 
-| Request failed | Website is down or blocking requests | Pretend you’re a human by adding headers={"User-Agent": "Mozilla/5.0"} | 
+
+| Request failed | Website is down or blocking requests | Add headers={"User-Agent": "Mozilla/5.0"} | 
+
 | No job listings found | Website changed its structure | Inspect the HTML with print(soup.prettify()) | 
+
 | Unexpected error | Python hates you | Debug using traceback.format_exc() | 
 
 
